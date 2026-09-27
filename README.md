@@ -49,3 +49,18 @@ PDF Study Material
                          |
                          v
                        Quiz
+Requirements
+Java 17 or higher
+Apache Maven
+Ollama
+Qwen3 4B model
+Running the Project
+mvn clean compile
+
+Then:
+
+ollama pull qwen3:4b
+
+Then application run karne ke liye:
+
+$cp = "target\classes;" + (Get-Content -Raw cp.txt).Trim(); java -cp $cp Main
